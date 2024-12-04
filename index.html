@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Building Material Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>ANOTHER GRACE AGROVET</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Please enter your email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="please enter your password" required>
+            <input type="submit"></button>
+        </form>
+    </div>
+    
+    <div class="sales-container" style="display:none;">
+        <h2>Add Sales Item</h2>
+        <button id="logout-button">Logout</button>
+        <form id="sales-form">
+            <div class="form-group">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" required>
+            </div>
+            <div class="form-group">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price per Piece:</label>
+                <input type="number" id="price" required>
+            </div>
+            <div class="form-group">
+                <label for="total-cost">Total Cost:</label>
+                <input type="text" id="total-cost" readonly>
+            </div>
+            <button type="submit">Confirm Item</button>
+        </form>
+
+        <h2>Search Products</h2>
+        <input type="text" id="search-input" placeholder="Search by item name or brand">
+        <ul id="search-results"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
